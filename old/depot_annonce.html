@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dépôt d'annonce</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="entete">
+            <a href="location.html"><img src="logo.png" id="logo" alt="Logo 37 Locatchop"></a>
+        </div>
+        <div class="nav">
+            <a href="location.html" class="liennav">
+                <div class="col1nav">
+                Trouvez une location
+                </div>
+            </a>
+            <a href="depot_annonce.html" class="liennav">
+                <div class="col2nav">
+                Mettez votre véhicule en location
+                </div>
+            </a>
+        </div>    
+        <form action="vehicule.php">
+            <h1 id="titrepage">Dépôt d'annonce - 37 Locatchop</h1>
+            <div class="depot">
+                <div class="col1depot">
+                    Titre de l'annonce : <input type="text" maxlength="100" required> <br>
+                    Image de la voiture : <input type="file" name="image vehicule" required> <br>
+                    Type de véhicule : <select>
+                        <option value="0">--Choisissez un type de voiture--</option>
+                        <option value="coupé">coupé</option>
+                        <option value="berlin">berline</option>
+                        <option value="citadine">citadine</option>
+                        <option value="SUV">SUV</option>
+                        </select>
+                    
+                    Ville : <select id="ville">
+                        <option value="1">--Choisissez une ville--</option>
+                        <option value="Tours">Tours</option>
+                        <option value="Lille">Lille</option>
+                        <option value="Marseille">Marseille</option>
+                        <option value="Lyon">Lyon</option>
+                        <option value="Paris">Paris</option>
+                    </select> <br>
+                    Prix de la location : <input type="number" name="prix" placeholder="prix" required> <br>
+                    Marque : <input type="text" placeholder="marque du véhicule" required>
+                    Modèle : <input type="text" placeholder="modèle du véhicule" required> <br>
+                    Puissance DIN : <input type="number">
+                    Boite : <select id="boite">
+                        <option value="auto">Automatique</option>
+                        <option value="manuel">Manuel</option>
+                    </select> <br>
+                    Description : <textarea class="Vcenter" id="description" cols="30" rows="3" placeholder="Décrivez brièvement votre annonce/véhicule" required></textarea>
+                </div>
+                <div class="col2depot">
+                    <h3>Contact : </h3>
+                    Numéro de téléphone : <input type="text" pattern="[0-9]{10}" placeholder="0600000000"> <br>
+                    Adresse email : <input type="text" placeholder="aaa@gmail.com" pattern="[a-zA-Z0-9\.\-_]{1,}[@]{1}[a-zA-Z0-9\.\-_]{1,}[\.]{1}[a-zA-Z0-9\.\-_]{1,}" required>
+                </div>
+            </div>
+            <input type="submit" value="Mettre en ligne" id="sub">
+        </form>
+    
+        <footer>
+            <div class="foot">
+                <div class="col1foot">
+                    <img src="logo.png" id="logofoot" alt="logo 37locatchop">
+                </div>
+                <div class="col2foot">
+                    <p id="titrefoot">37Locatchop-2023</p>
+                    <a href="mentionlégales.html" class="lienfoot" id="mentionfoot">Mention Légal</a>
+                </div>
+                <div class="col3foot">
+                <ul id="listefoot">
+                <li class="souligne">Nous contacter :</li>
+                <li>37 Rue du Commerce,37000 Tours</li>
+                <li>+33 6 00 00 00 00</li>
+                <li><a href="mailto:contact@37locatshop.com" class="lienfoot">contact@37locatchop.com</a></li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

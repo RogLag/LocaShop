@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LocaShop</title>
+    <link rel="stylesheet" href="public/css/welcome.css">
+    <link rel="stylesheet" href="public/css/button.css">
+</head>
+
+<script>
+// Fonction pour charger une URL via AJAX
+function charger(url, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      callback(xhr.responseText);
+    }
+  };
+  xhr.open('GET', url, true);
+  xhr.send('');
+}
+
+// Vérifier si l'utilisateur est connecté
+charger('/controller/protect.php', function(reponse) {
+  if (reponse === 'OK') {
+    // Si l'utilisateur est connecté, charger le contenu de la page HTML
+    charger('Welcome.html', function(contenu) {
+      document.body.innerHTML = contenu;
+    });
+  } else {
+    // Si l'utilisateur n'est pas connecté, rediriger vers la page de connexion
+    window.location.href = '/pages/Login.html';
+  }
+});
+</script>
+
+<body>
+    <h1>Bienvenue sur LocaShop</h1>
+    <div class="logo">
+        <img src="/public/images/logo.png" alt="Logo">
+    </div>
+    <p>Bienvenue sur notre site de location et de mise en location de voiture ! Nous sommes une plateforme qui facilite la location de véhicules entre particuliers. Si vous avez besoin d'une voiture pour une courte période ou si vous souhaitez louer la vôtre, notre site est la solution qu'il vous faut !</p>
+    <div class="buttons">
+        <button onclick="window.location.href = '/welcome.html';">Trouver une location</button>
+        <button onclick="window.location.href = '/welcome.html';" class="outline">Mettre en location</button>
+    </div>
+</body>
+
+</html>

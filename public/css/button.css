@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300&display=swap');
+
+button {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    background-color: #ad2424;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 20rem;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+button.outline {
+    background-color: transparent;
+    color: #ad2424;
+    border: .25rem solid #ad2424;
+}
+
+button:hover {
+
+    transform: translateY(-5px);
+    box-shadow: #d0dbd7 0px 5px 12px;
+
+}
