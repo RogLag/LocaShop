@@ -34,7 +34,6 @@ You can close the settings window and press start.
 
 Finally, go here:
     
-```bash
-  https://localhost/
-```
+[Page d'accueil du projet](localhost/Welcome.php)
+
     
