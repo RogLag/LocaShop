@@ -22,7 +22,7 @@ $sql = "SELECT IdAnnonce FROM annonces WHERE IdUser = '" . $_SESSION['utilisateu
 
 $result = mysqli_query($db, $sql);
 
-header('Location: ../welcome.php');
+header('Location: ../pages/Location.php');
 
 exit();
 
