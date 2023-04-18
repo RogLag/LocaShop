@@ -34,6 +34,6 @@ You can close the settings window and press start.
 
 Finally, go here:
     
-[Page d'accueil du projet](www.localhost/Welcome.php)
+www.localhost/Welcome.php
 
     
