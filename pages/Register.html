@@ -2,21 +2,28 @@
 
 <html lang="fr">
 
+<!DOCTYPE html>
+
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>LocaShop</title>
-    <link rel="stylesheet" href="public/css/welcome.css">
-    <link rel="stylesheet" href="public/css/button.css">
+    <link rel="stylesheet" href="../public/css/welcome.css">
+    <link rel="stylesheet" href="../public/css/button.css">
+    <link rel="stylesheet" href="../public/css/createLocation.css">
+    <link rel="stylesheet" href="../public/css/login.css">
 </head>
 
 <body>
-    <form action="/controller/register.php">
-        <label>Pseudo</label>
-        <input type="text" name="pseudo" placeholder="Pseudo">
-        <label>Mot de passe</label>
-        <input type="password" name="password" placeholder="Mot de passe">
+    <h1 id="titrepage">Page d'enregistrement - 37 Locatchop</h1>
+    <form action="/controller/register.php" method="POST">
+        <label>Prénom : <input type="text" name="Username" placeholder="Prénom"></label>
+        <label>Nom de famille : <input type="text" name="Familyname" placeholder="Nom de famille"></label>
+        <label>Email : <input type="Email" name="Email" placeholder="Email"></label>
+        <label>Mot de passe : <input type="Password" name="Password" placeholder="Mot de passe"></label>
         <button type="submit">S'inscrire</button>
-        <a href="Login.html">Se connecter</a>
+        <a href="Login.html" class="outline">Se connecter</a>
     </form>
 </body>
 

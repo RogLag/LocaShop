@@ -5,18 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <title>LocaShop</title>
-    <link rel="stylesheet" href="public/css/welcome.css">
-    <link rel="stylesheet" href="public/css/button.css">
+    <link rel="stylesheet" href="../public/css/welcome.css">
+    <link rel="stylesheet" href="../public/css/button.css">
+    <link rel="stylesheet" href="../public/css/createLocation.css">
+    <link rel="stylesheet" href="../public/css/login.css">
 </head>
 
 <body>
-    <form action="/controller/login.php">
-        <label>Pseudo</label>
-        <input type="text" name="pseudo" placeholder="Pseudo">
-        <label>Mot de passe</label>
-        <input type="password" name="password" placeholder="Mot de passe">
+    <h1 id="titrepage">Page de connexion - 37 Locatchop</h1>
+    <form action="/controller/login.php" method="POST">
+        <label>Email : <input type="Email" name="Email" placeholder="Email"></label>
+        <label>Mot de passe : <input type="Password" name="Password" placeholder="Mot de passe"></label>
         <button type="submit">Se connecter</button>
-        <a href="Register.html">S'inscrire</a>
+        <a href="Register.html" class="outline">S'inscrire</a>
     </form>
 </body>
 
