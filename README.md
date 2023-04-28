@@ -8,7 +8,7 @@
 
 - [@RogLag](https://www.github.com/RogLag)
 - [@Pol-13](https://www.github.com/Pol-13)
-- [@RogLag](https://www.github.com/RogLag)
+- [@arminezamani](https://www.github.com/arminezamani)
 
 
 ## Features
